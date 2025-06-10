@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rose Merin | B.Tech Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <header>
+<div class="header-left">
+  <div class="pfp-wrapper">
+    <img src="nptel2.jpg" alt="Rose Merin" class="pfp" id="profilePic" />
+    <label for="pfpInput" class="add-image-btn">Add Image</label>
+    <input type="file" id="pfpInput" accept="image/*" style="display:none;" />
+  </div>
+  <div class="logo">MyPortfolio</div>
+</div>
+
+        <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+  </header>
+
+  <section class="hero">
+    <h1>Hello, I'm <span class="highlight">Rose Merin</span></h1>
+    <p>B.Tech Computer Science Student</p>
+  </section>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I am a passionate B.Tech student specializing in Computer Science and Design. I enjoy building responsive websites and learning about modern technologies.</p>
+  </section>
+
+  <section id="skills" class="section" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">UI/UX</div>
+      <div class="skill-card">Python</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-left">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Tourist Places Website</h3>
+      <p>A responsive website displaying Indian tourist places using HTML, CSS, and JS.</p>
+    </div>
+    <div class="project-card">
+      <h3>To-Do App</h3>
+      <p>Simple task management app with JavaScript DOM manipulation.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-aos="zoom-in">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Rose Merin. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
